@@ -19,7 +19,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --coverage --watchAll ",
+    "test": "react-scripts test --coverage --watchAll=false ",
     "lint": "eslint src/**/*.js",
     "lint:fix": "eslint --fix src/**/*.js",
     "test:all": "set CI=true && react-scripts test && npm run lint",
