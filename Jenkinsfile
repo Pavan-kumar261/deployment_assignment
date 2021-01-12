@@ -30,15 +30,15 @@ pipeline {
                 sh 'npm run build'
             }
         }
-    // stage('DEPLOYMENT') {
-    //     steps{
-    //     echo 'UPLOADING TO AWS S3 BUCKET'
-    //     dir('/var/lib/jenkins/workspace/responsivescreen/'){
-    //        withAWS(region:'ap-south-1',credentials:'s3cred') {
-    //           s3Upload(bucket:"mydeployment-assignment", workingDir:'build', includePathPattern:'**/*');
-    //         }
-    //     }
-    // }
-    // }
+    stage('DEPLOYMENT') {
+        steps{
+        echo 'UPLOADING TO AWS S3 BUCKET'
+        dir('/var/lib/jenkins/workspace/TranslateApp/'){
+           withAWS(region:'ap-south-1',credentials:'AWS_S3') {
+              s3Upload(bucket:"mytranslateapp", workingDir:'build', includePathPattern:'**/*');
+            }
+        }
+    }
+    }
 }
 }
