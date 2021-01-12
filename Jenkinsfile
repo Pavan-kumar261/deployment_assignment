@@ -33,7 +33,7 @@ pipeline {
     stage('DEPLOYMENT') {
         steps{
         echo 'UPLOADING TO AWS S3 BUCKET'
-        dir('/var/lib/jenkins/workspace/TranslateApp/'){
+        dir('/home/nineleaps/Jenkins/JenkinsHome/workspace/TranslateApp'){
            withAWS(region:'ap-south-1',credentials:'AWS_S3') {
               s3Upload(bucket:"mytranslateapp", workingDir:'build', includePathPattern:'**/*');
             }
