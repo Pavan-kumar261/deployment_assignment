@@ -24,21 +24,21 @@ pipeline {
         }
        }
 }
-//   stage('PRODUCTION-BUILD') {
-//             steps {
-//                 echo 'WORKING ON PRODUCTION BUILD'
-//                 sh 'npm run build'
-//             }
-//         }
-//     stage('DEPLOYMENT') {
-//         steps{
-//         echo 'UPLOADING TO AWS S3 BUCKET'
-//         dir('/var/lib/jenkins/workspace/responsivescreen/'){
-//            withAWS(region:'ap-south-1',credentials:'s3cred') {
-//               s3Upload(bucket:"mydeployment-assignment", workingDir:'build', includePathPattern:'**/*');
-//             }
-//         }
-//     }
-//     }
+  stage('PRODUCTION-BUILD') {
+            steps {
+                echo 'WORKING ON PRODUCTION BUILD'
+                sh 'npm run build'
+            }
+        }
+    // stage('DEPLOYMENT') {
+    //     steps{
+    //     echo 'UPLOADING TO AWS S3 BUCKET'
+    //     dir('/var/lib/jenkins/workspace/responsivescreen/'){
+    //        withAWS(region:'ap-south-1',credentials:'s3cred') {
+    //           s3Upload(bucket:"mydeployment-assignment", workingDir:'build', includePathPattern:'**/*');
+    //         }
+    //     }
+    // }
+    // }
 }
 }
