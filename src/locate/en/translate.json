@@ -1,0 +1,13 @@
+{
+    "translations": {
+        "paragraph": "Quotes",
+        "author": {
+            "title": "Author Name",
+            "value": "E. L. Doctorow"
+        },
+        "description": {
+            "title": "Quote",
+            "value": "Writing a novel is like driving a car at night. You can only see as far as your headlights, but you can make the whole trip that way"
+        }
+    }
+}

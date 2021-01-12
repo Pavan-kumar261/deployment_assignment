@@ -1,0 +1,25 @@
+
+# dependencies
+/node_modules
+
+
+# testing
+/coverage
+
+/.scannerwork
+# production
+/build
+
+# misc
+.env
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+/.scannerwork
+/.vscode
+/.env
+/.cert
+/mkcert
+/mkcert-v1.1.2-linux-amd64.1

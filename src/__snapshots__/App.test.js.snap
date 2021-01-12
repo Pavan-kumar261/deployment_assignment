@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Matches the snapshot 1`] = `
+<div
+  className="App"
+>
+  <h1
+    style={
+      Object {
+        "textAlign": "center",
+      }
+    }
+  >
+    Translate App
+  </h1>
+  <p
+    className="radio_buttons"
+  >
+    <div>
+      <input
+        checked={true}
+        name="language"
+        onChange={[Function]}
+        type="radio"
+        value="en"
+      />
+      English  
+      <input
+        checked={false}
+        name="language"
+        onChange={[Function]}
+        type="radio"
+        value="ru"
+      />
+      Russian  
+      <input
+        checked={false}
+        name="language"
+        onChange={[Function]}
+        type="radio"
+        value="jp"
+      />
+      Japanese  
+      <input
+        checked={false}
+        name="language"
+        onChange={[Function]}
+        type="radio"
+        value="hi"
+      />
+      Hindi  
+      <input
+        checked={false}
+        name="language"
+        onChange={[Function]}
+        type="radio"
+        value="gk"
+      />
+      Greek
+    </div>
+  </p>
+  <h1>
+    Quotes
+  </h1>
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          Author Name
+        </td>
+        <td>
+          :
+        </td>
+        <td>
+          E. L. Doctorow
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Quote
+        </td>
+        <td>
+          :
+        </td>
+        <td>
+          Writing a novel is like driving a car at night. You can only see as far as your headlights, but you can make the whole trip that way
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div
+    style={
+      Object {
+        "marginTop": 40,
+      }
+    }
+  >
+    Learn more: 
+    <a
+      href="https://react.i18next.com"
+    >
+      https://react.i18next.js
+    </a>
+  </div>
+</div>
+`;
